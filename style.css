@@ -1,0 +1,224 @@
+/* =========================GENERAL STYLING... 
+  YOU SHOULD KNOW, THE WEBAPGE IS DESIGNED ONLY FOR DESKTOP VIEW.
+  IT MAY NOT LOOK TOO GOOD ON TABLET OR MOBILE VIEW!
+============================================*/
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: #a1ca64;
+  display: flex;
+}
+
+main {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  margin: auto;
+  box-shadow: 2px 25px 20px 4px #385d27;
+}
+
+/* =====LEFT SECTION OF THE WEBPAGE STYLING==== */
+
+#left-container {
+  width: 40%;
+  background: linear-gradient(to bottom, #3f4f5f, #28303b, #232c31);
+  display: flex;
+  flex-direction: column;
+}
+
+.left-container_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+#left-container img {
+  width: 55px;
+  height: 60px;
+  background: #a1ca64;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+#left-container h1 {
+  color: #fafbfd;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+#left-container p {
+  color: #aab1bb;
+  font-size: 1rem;
+}
+
+#header {
+  /* margin-bottom: 1rem; */
+}
+
+.left-container_content #content {
+  max-width: 60%;
+}
+.left-container_content #content p {
+  font-size: 1.2rem;
+}
+
+/* ====RIGHT SECTION OF THE WEBPAGE STYLING==== */
+
+#right-container {
+  width: 60%;
+  background: #fefefe;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#right-container nav {
+  text-align: center;
+  width: 90%;
+  max-height: 50px;
+  margin: 0 auto;
+}
+
+#right-container nav a {
+  text-decoration: none;
+}
+
+#right-container nav ul {
+  list-style-type: none;
+  align-items: center;
+  /* gap: 10px; */
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0.5rem 0 0 auto;
+  padding-left: 60px;
+}
+#right-container nav ul,
+.form-wrapper {
+  width: 60%;
+}
+
+#right-container nav ul li {
+  color: #9e9e9e;
+  font-size: 0.8rem;
+}
+
+#right-container nav ul #last {
+  border: 1px solid #bbbbbb;
+  padding: 0.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.form-header,
+form {
+  width: 80%;
+  margin: auto;
+}
+
+.form-header {
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.form-header h1,
+.form-header p {
+  margin: 0;
+}
+
+form label,
+form span a {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #9c9c9c;
+  line-height: 1.5;
+}
+
+form span a {
+  text-transform: capitalize;
+}
+
+form span {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  width: 100%;
+  padding: 0.7rem 2rem;
+  margin-bottom: 0.8rem;
+  background: #f8f8f8;
+  border: none;
+  outline: none;
+}
+
+form input:focus {
+  border: 1px solid #f8f8f8;
+  background: #fefefe;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-icons {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 25%;
+  left: 3%;
+}
+
+form input[type="checkbox"] {
+  width: 4%;
+  margin: 0.8rem 0;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+form b {
+  font-size: 0.8rem;
+  color: #9c9c9c;
+  justify-content: center;
+  margin-left: 0.2rem;
+}
+
+form button {
+  background: #2b2b2b;
+  color: #fafbfd;
+  text-transform: uppercase;
+  padding: 0.6rem 2rem;
+  border: none;
+  font-size: 0.8rem;
+}
+
+/* ====FOOTER STYLE FOR BOTH SECTIONS=== */
+footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer p {
+  font-size: 0.8rem !important;
+}
+
+#right-container_footer {
+  color: #9c9c9c;
+  text-align: right;
+}
