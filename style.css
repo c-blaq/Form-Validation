@@ -1,6 +1,4 @@
 /* =========================GENERAL STYLING... 
-  YOU SHOULD KNOW, THE WEBAPGE IS DESIGNED ONLY FOR DESKTOP VIEW.
-  IT MAY NOT LOOK TOO GOOD ON TABLET OR MOBILE VIEW!
 ============================================*/
 * {
   box-sizing: border-box;
@@ -17,6 +15,7 @@ body {
   height: 100vh;
   background: #a1ca64;
   display: flex;
+  /* overflow-y: scroll; */
 }
 
 main {
@@ -34,6 +33,7 @@ main {
   background: linear-gradient(to bottom, #3f4f5f, #28303b, #232c31);
   display: flex;
   flex-direction: column;
+  /* overflow-y: scroll; */
 }
 
 .left-container_content {
@@ -84,6 +84,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* height: 100%; */
+  /* overflow-y: scroll; */
 }
 #right-container nav {
   text-align: center;
@@ -221,4 +223,20 @@ footer p {
 #right-container_footer {
   color: #9c9c9c;
   text-align: right;
+}
+
+/* RESPONSIVESNESS */
+
+@media only screen and (max-width: 759.98px) {
+  #left-container {
+    display: none;
+  }
+  #right-container,
+  .form-wrapper {
+    width: 100%;
+  }
+
+  #right-container nav ul {
+    flex-wrap: no-wrap;
+  }
 }
